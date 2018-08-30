@@ -1,12 +1,8 @@
-from flask import app
-from flask_cors import CORS
-from flask_session import Session
+from flask import Flask
 
-CORS(app, supports_credentials=True)
+app = Flask(__name__)
 
-Session(app)
 
-CORS(app, supports_credentials=True)
 
 
 @app.route('/')
