@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+
+  flask-test:
+    build:
+      context: .
+    container_name: flask-test
+    image: stack-2.sinocbd.local:5000/zout/flask-test:latest
+    restart: always
