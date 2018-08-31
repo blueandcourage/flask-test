@@ -10,7 +10,7 @@ ADD . /app/
 
 
 RUN pip3 install -r requirements.txt --upgrade --index-url https://pypi.tuna.tsinghua.edu.cn/simple/ \
-    && apt-get install python3 -y
+    && apt-get install python3 sudo make -y
 
 ENTRYPOINT ["python3"]
 CMD ["application.py"]
